@@ -11,6 +11,7 @@ setuptools.setup(
     description="A zero-dependency python library for reading/parsing canadian well-log files (.Las files)",
     long_description=long_description,
     long_description_content_type="text/markdown",
+    keywords='well log well-log geophysical geophysics las .las',
     url="https://github.com/iykekings/las_py",
     packages=setuptools.find_packages(),
     classifiers=[

@@ -142,3 +142,6 @@
       # Note: The logging tools became stuck at 625 metres causing the data
       # between 625 metres and 615 metres to be invalid.
   ```
+
+- ## Support
+  las_py is an MIT-licensed open source project. You can help it grow by becoming a sponsor/supporter. Donate on [Patreon](https://www.patreon.com/bePatron?u=19152008)
