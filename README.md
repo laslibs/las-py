@@ -4,6 +4,12 @@
 
 ## Currently supports only version 2.0 of LAS Specification. For more information about this format, see the Canadian Well Logging Society [web page](http://www.cwls.org/las/)
 
+- What's new in 1.1.0
+
+  - Export to csv
+  - Export to csv without rows containing null values
+  - Bug fixes
+
 - To Install
 
 
@@ -142,6 +148,42 @@
       # Note: The logging tools became stuck at 625 metres causing the data
       # between 625 metres and 615 metres to be invalid.
   ```
+
+- Export to CSV
+
+  ### This writes a csv file to the current working directory, with headers of the well and data section only.
+
+  ```python
+      my_las.to_csv('result')
+      # result.csv has been created Successfully!
+  ```
+
+  > result.csv
+
+  | DEPT | RHOB    | GR      | NPHI  |
+  | ---- | ------- | ------- | ----- |
+  | 0.5  | -999.25 | -999.25 | -0.08 |
+  | 1.0  | -999.25 | -999.25 | -0.08 |
+  | 1.5  | -999.25 | -999.25 | -0.04 |
+  | ...  | ...     | ...     | ...   |
+  | 1.3  | -999.25 | -999.25 | -0.08 |
+
+  Or get the version of csv with null values stripped
+
+  ```python
+      my_las.to_csv_stripped('clean')
+      # clean.csv has been created Successfully!
+  ```
+
+  > clean.csv
+
+  | DEPT | RHOB  | GR   | NPHI  |
+  | ---- | ----- | ---- | ----- |
+  | 80.5 | 2.771 | 18.6 | -6.08 |
+  | 81.0 | 2.761 | 17.4 | -6.0  |
+  | 81.5 | 2.752 | 16.4 | -5.96 |
+  | ...  | ...   | ...  | ...   |
+  | 80.5 | 2.762 | 16.2 | -5.06 |
 
 - ## Support
   las-py is an MIT-licensed open source project. You can help it grow by becoming a sponsor/supporter. Donate on [Patreon](https://www.patreon.com/bePatron?u=19152008)

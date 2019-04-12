@@ -100,6 +100,23 @@ class Laspy:
     def __get_other(self):
         return self.__secret.other_sect
 
+    def to_csv(self, file_name):
+        header = ','.join(self.__header()) + '\n'
+        data = [','.join([str(y) for y in x])+'\n' for x in self.__get_data()]
+        with open(file_name+'.csv', mode='a', encoding='utf-8') as f:
+            f.write(header + ''.join(data))
+        f.close()
+        return '{}.csv has been created Successfully!'.format(file_name)
+
+    def to_csv_stripped(self, file_name):
+        header = ','.join(self.__header()) + '\n'
+        data = [','.join([str(y) for y in x]) +
+                '\n' for x in self.__get_cleaned_data()]
+        with open(file_name+'.csv', mode='a', encoding='utf-8') as f:
+            f.write(header + ''.join(data))
+        f.close()
+        return '{}.csv has been created Successfully!'.format(file_name)
+
 
 class LasContent:
     def __init__(self, str):
