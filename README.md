@@ -1,6 +1,6 @@
-# Las_py
+# Las-py
 
-## las_py is a zero-dependency Python library for parsing .Las file (Geophysical/Canadian well log files).
+## las-py is a zero-dependency Python library for parsing .Las file (Geophysical/Canadian well log files).
 
 ## Currently supports only version 2.0 of LAS Specification. For more information about this format, see the Canadian Well Logging Society [web page](http://www.cwls.org/las/)
 
@@ -8,7 +8,7 @@
 
 
     ```sh
-        $pip insatll las_py
+        $pip insatll las-py
     ```
 
 - Usage
@@ -18,7 +18,7 @@
         from las_py import Laspy
      ```
     ```python
-        my_las = ('path_to_las_file.las')
+        my_las = Laspy('path_to_las_file.las')
     ```
 
 - Read data
@@ -144,4 +144,4 @@
   ```
 
 - ## Support
-  las_py is an MIT-licensed open source project. You can help it grow by becoming a sponsor/supporter. Donate on [Patreon](https://www.patreon.com/bePatron?u=19152008)
+  las-py is an MIT-licensed open source project. You can help it grow by becoming a sponsor/supporter. Donate on [Patreon](https://www.patreon.com/bePatron?u=19152008)

@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="las_py",
-    version="1.0.0",
+    version="1.0.3",
     author="Ikechukwu Eze",
     author_email="iykekings36@gmail.com",
     description="A zero-dependency python library for reading/parsing canadian well-log files (.Las files)",
@@ -19,4 +19,11 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
+    project_urls={
+        'Documentation': 'https://github.com/iykekings/las_py',
+        'Funding': 'https://www.patreon.com/bePatron?u=19152008',
+        'Source': 'https://github.com/iykekings/las_py',
+        'Tracker': 'https://github.com/iykekings/las_py/issues',
+    },
+    python_requires='>=3',
 )
