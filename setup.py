@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="las_py",
-    version="1.0.3",
+    version="1.1.0",
     author="Ikechukwu Eze",
     author_email="iykekings36@gmail.com",
     description="A zero-dependency python library for reading/parsing canadian well-log files (.Las files)",
