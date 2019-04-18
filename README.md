@@ -128,8 +128,8 @@
 
 
     ```python
-        rows = my_las.row_counts # 4
-        columns = my_las.column_counts # 3081
+        rows = my_las.row_count # 4
+        columns = my_las.column_count # 3081
     ```
 
 - Get the version and wrap
