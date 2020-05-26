@@ -2,7 +2,7 @@
 
 ## las-py is a zero-dependency Python library for parsing .Las file (Geophysical/Canadian well log files).
 
-## Currently supports only version 2.0 of LAS Specification. For more information about this format, see the Canadian Well Logging Society [web page](http://www.cwls.org/las/)
+## Currently supports only version 2.0 of [LAS Specification](https://www.cwls.org/wp-content/uploads/2017/02/Las2_Update_Feb2017.pdf). For more information about this format, see the Canadian Well Logging Society [product page](https://www.cwls.org/products/)
 
 - What's new in 1.1.0
 
