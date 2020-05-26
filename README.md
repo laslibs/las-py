@@ -14,7 +14,7 @@
 
 
     ```sh
-        $pip insatll las-py
+        $pip install las-py
     ```
 
 - Usage
