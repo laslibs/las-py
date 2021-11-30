@@ -16,7 +16,7 @@ class Laspy:
         self.param = read_param(self.__secret.param_sect)
         self.row_count = len(self.__get_data())
         self.column_count = len(self.__get_data()[0])
-        self.version, self.wrap = self.__get_version()
+        self.version, self.wrap, *self.other_infos = self.__get_version()
 
     def __str__(self):
         if(len(self.header) > 0):
